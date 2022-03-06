@@ -16,3 +16,11 @@ To be able to see this field we need to click on the Advanced View button.
 Post Arguments input field with nvme and ipmi options:
 
 /bin/sh -c 'apt update && apt install -y smartmontools && apt install -y lm-sensors && apt install -y nvme-cli && apt install -y ipmitool && telegraf'
+
+telegraf:1.20.2-alpine
+
+/bin/sh -c 'apk update && apk add smartmontools && apk add lm-sensors lm-sensors-detect perl && telegraf'
+
+With IPMI and nvme: 
+
+/bin/sh -c 'apk update && apk add smartmontools && apk add lm-sensors lm-sensors-detect perl && apk add nvme-cli && apk add ipmitool && telegraf'
