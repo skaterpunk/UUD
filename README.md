@@ -13,7 +13,7 @@ Post Arguments input field:
 
 To be able to see this field we need to click on the Advanced View button. 
 
-Post Arguments input field with nvme and ipmi options:
+With IPMI and nvme:
 
 /bin/sh -c 'apt update && apt install -y smartmontools && apt install -y lm-sensors && apt install -y nvme-cli && apt install -y ipmitool && telegraf'
 
